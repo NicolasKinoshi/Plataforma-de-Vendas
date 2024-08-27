@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css"> <!-- Corrigido o caminho do CSS -->
+    <title>Finalização de Compra</title>
+</head>
+
+<body>
+    <header>
+        <img src="../../img/logo.png" alt="Logo do Site">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Catálogo</a></li>
+                <li><a href="../user/login.html">Login</a></li>
+                <li><a href="checkout.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Finalização de Compra</h1>
+
+        <div id="cart-items">
+            <!-- Itens do carrinho são listados aqui -->
+        </div>
+
+        <p id="total"></p>
+
+        <h2>Endereço de Entrega</h2>
+        <form>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="Digite seu CEP">
+            <button type="button" id="calc-freight">Calcular Frete</button>
+
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" readonly>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+
+        <!-- Botão para voltar ao catálogo -->
+        <button class="btn-catalog" onclick="window.location.href='../../index.html'">Voltar ao Catálogo</button>
+    </main>
+
+    <script src="checkout.js"></script>
+    <script src="endereco.js"></script>
+</body>
+
+</html>
